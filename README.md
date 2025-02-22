@@ -1,7 +1,7 @@
-<h1 align="center">Hi there, I'm <a href="#" target="_blank">raphaelka22</a>  
+<h1 align="center">Hi there, I'm <a href="#" target="_blank">𝚛𝚊𝚙𝚑𝚊𝚎𝚕𝚔𝚊𝟸𝟸</a>  
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>  
 
-<h3 align="center">Engineering student, creating IBookClub application </h3>
+<h3 align="center">𝙴𝚗𝚐𝚒𝚗𝚎𝚎𝚛𝚒𝚗𝚐 𝚜𝚝𝚞𝚍𝚎𝚗𝚝, 𝚌𝚛𝚎𝚊𝚝𝚒𝚗𝚐 𝙸𝙱𝚘𝚘𝚔𝙲𝚕𝚞𝚋 𝚊𝚙𝚙𝚕𝚒𝚌𝚊𝚝𝚒𝚘𝚗</h3>
 
 <!--
 **raphaelka22/raphaelka22** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
