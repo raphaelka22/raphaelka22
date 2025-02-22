@@ -5,7 +5,7 @@
 
 ---
 
-## 🧑🏼‍🎓 About Me  
+## 👨‍🎓 About Me  
 
 🏗 Construction Management student – studying at a construction university  
 🌍 Passionate about creating something useful for society  
