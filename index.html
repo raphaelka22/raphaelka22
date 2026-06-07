@@ -11,6 +11,21 @@
 </head>
 <body>
 
+  <!-- ░░ INTRO OVERLAY ░░ -->
+  <div class="intro" id="intro">
+    <div class="intro-bg"></div>
+
+    <div class="intro-names" aria-hidden="true">
+      <span class="intro-name-1">Aleksandr</span>
+      <span class="intro-name-2">Akhmedov</span>
+    </div>
+
+    <div class="intro-portfolio-wrap">
+      <div class="intro-portfolio">Portfolio</div>
+      <div class="intro-reflection" aria-hidden="true">Portfolio</div>
+    </div>
+  </div>
+
   <!-- ░░ CURSOR ░░ -->
   <div class="cursor" id="cursor"></div>
   <div class="cursor-follower" id="cursorFollower"></div>
@@ -35,7 +50,6 @@
     <div class="hero-bg">
       <div class="hero-gradient"></div>
       <canvas class="hero-noise" id="noiseCanvas"></canvas>
-      <!-- Big background name -->
       <div class="hero-bg-name" aria-hidden="true">
         <span>Aleksandr</span>
         <span>Akhmedov</span>
@@ -48,7 +62,6 @@
         Open to new projects
       </div>
 
-      <!-- Chrome glass "Portfolio" word -->
       <div class="hero-chrome-wrap">
         <h1 class="hero-chrome-word">Portfolio</h1>
         <div class="hero-chrome-reflection" aria-hidden="true">Portfolio</div>
@@ -70,7 +83,6 @@
       <div class="scroll-line"></div>
     </div>
 
-    <!-- Floating glass cards -->
     <div class="float-card glass fc-1">
       <div class="fc-icon">✦</div>
       <div class="fc-text">
@@ -89,14 +101,14 @@
 
   <!-- ░░ WORKS ░░ -->
   <section class="works" id="works">
-    <div class="section-header">
+    <div class="section-header" data-anim="up">
       <span class="section-label">Selected Work</span>
       <h2 class="section-title">Projects that<br /><em>define me</em></h2>
     </div>
 
     <div class="works-grid" id="worksGrid">
 
-      <div class="work-card glass-card" data-index="0">
+      <div class="work-card glass-card" data-anim="scale" data-delay="0" data-index="0">
         <div class="work-card-inner">
           <div class="work-thumb thumb-1">
             <div class="work-thumb-glow"></div>
@@ -114,7 +126,7 @@
         </div>
       </div>
 
-      <div class="work-card glass-card" data-index="1">
+      <div class="work-card glass-card" data-anim="scale" data-delay="1" data-index="1">
         <div class="work-card-inner">
           <div class="work-thumb thumb-2">
             <div class="work-thumb-glow"></div>
@@ -132,7 +144,7 @@
         </div>
       </div>
 
-      <div class="work-card glass-card" data-index="2">
+      <div class="work-card glass-card" data-anim="scale" data-delay="2" data-index="2">
         <div class="work-card-inner">
           <div class="work-thumb thumb-3">
             <div class="work-thumb-glow"></div>
@@ -150,7 +162,7 @@
         </div>
       </div>
 
-      <div class="work-card glass-card" data-index="3">
+      <div class="work-card glass-card" data-anim="scale" data-delay="3" data-index="3">
         <div class="work-card-inner">
           <div class="work-thumb thumb-4">
             <div class="work-thumb-glow"></div>
@@ -174,7 +186,7 @@
   <!-- ░░ ABOUT ░░ -->
   <section class="about" id="about">
     <div class="about-grid">
-      <div class="about-left">
+      <div class="about-left" data-anim="left">
         <span class="section-label">About Me</span>
         <h2 class="section-title">Akhmedov<br /><em>Alexander</em></h2>
         <p class="about-bio">
@@ -192,7 +204,7 @@
           <div class="skill-pill glass-pill">3D / Blender</div>
         </div>
       </div>
-      <div class="about-right">
+      <div class="about-right" data-anim="right">
         <div class="about-photo-wrap glass">
           <div class="about-photo-placeholder">
             <span class="photo-initials">AA</span>
@@ -221,7 +233,7 @@
   <section class="contact" id="contact">
     <div class="contact-inner">
       <div class="contact-top">
-        <div class="contact-left">
+        <div class="contact-left" data-anim="up" data-delay="0">
           <h2 class="contact-heading">
             Have a cool idea?<br />
             Let's <em>collaborate.</em>
@@ -231,7 +243,7 @@
             <span class="btn-icon">+</span>
           </a>
         </div>
-        <div class="contact-right">
+        <div class="contact-right" data-anim="up" data-delay="1">
           <div class="contact-col">
             <h4>Contact</h4>
             <a href="mailto:rapha3lka22@gmail.com">rapha3lka22@gmail.com</a>
@@ -253,7 +265,7 @@
 
       <div class="contact-divider"></div>
 
-      <div class="contact-bottom">
+      <div class="contact-bottom" data-anim="up" data-delay="2">
         <span>©Akhmedov Alexander 2025</span>
         <span>Designed &amp; Built by AA</span>
       </div>
