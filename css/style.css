@@ -231,12 +231,115 @@ body:has(button:hover) .cursor-follower {
   pointer-events: none;
 }
 
+/* ─── Background name "Aleksandr Akhmedov" ─── */
+.hero-bg-name {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  pointer-events: none;
+  z-index: 0;
+  user-select: none;
+  overflow: hidden;
+}
+
+.hero-bg-name span {
+  display: block;
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(72px, 13.5vw, 195px);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.92;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: transparent;
+  /* subtle white outline + very faint blue fill */
+  -webkit-text-stroke: 1px rgba(180,205,255,0.09);
+  background: linear-gradient(
+    180deg,
+    rgba(200,215,255,0.07) 0%,
+    rgba(107,158,255,0.04) 50%,
+    rgba(60,90,200,0.02) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Soft blur to push it firmly into background */
+  filter: blur(0.5px);
+}
+
+/* ─── Chrome / Glass "Portfolio" text ─── */
+.hero-chrome-wrap {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 28px;
+}
+
+.hero-chrome-word {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(72px, 13vw, 170px);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+
+  /* Chrome gradient — bright top highlight, dark midtone, reflected light at bottom */
+  background: linear-gradient(
+    168deg,
+    #ffffff        0%,
+    #ccdaff       12%,
+    #ffffff       26%,
+    #8aaaee       40%,
+    #3a5aaa       56%,
+    #6a90dd       70%,
+    #1a2a60       82%,
+    #4468bb       92%,
+    #0a1230      100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  /* Glow + depth shadow */
+  filter:
+    drop-shadow(0 0 30px rgba(107,158,255,0.35))
+    drop-shadow(0 0 80px rgba(107,158,255,0.12))
+    drop-shadow(0 6px 24px rgba(0,0,10,0.9));
+}
+
+/* Flipped reflection below — like a glass surface */
+.hero-chrome-reflection {
+  position: absolute;
+  top: 100%;
+  left: 0; right: 0;
+  text-align: center;
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(72px, 13vw, 170px);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(107,158,255,0.18) 0%,
+    rgba(107,158,255,0.05) 40%,
+    transparent 70%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transform: scaleY(-1);
+  pointer-events: none;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, transparent 55%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, transparent 55%);
+}
+
 .hero-content {
   position: relative;
   z-index: 1;
   text-align: center;
   padding: 0 24px;
-  max-width: 760px;
+  max-width: 900px;
 }
 
 .hero-badge {
@@ -258,35 +361,6 @@ body:has(button:hover) .cursor-follower {
   box-shadow: 0 0 10px var(--accent);
 }
 
-.hero-title {
-  font-family: 'Syne', sans-serif;
-  font-size: clamp(54px, 8.5vw, 100px);
-  font-weight: 800;
-  line-height: 1.02;
-  letter-spacing: -0.035em;
-  margin-bottom: 22px;
-  /* white → pale blue gradient, like text lit from above */
-  background: linear-gradient(
-    170deg,
-    #ffffff 0%,
-    rgba(200,215,255,0.9) 55%,
-    rgba(107,158,255,0.65) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* The italic serif word sits naturally inside the title */
-.hero-title em {
-  font-size: 1em;
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  background: inherit;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
 
 .hero-sub {
   font-size: 15px;
